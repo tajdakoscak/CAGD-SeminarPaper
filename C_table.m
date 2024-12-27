@@ -1,10 +1,10 @@
 function C_table = C_table(m, k, l)
-    % Compute the full C-table for the constrained dual Bernstein basis
-    % Inputs:
-    %   m - degree of the curve
-    %   k, l - constraints at the boundaries
-    % Outputs:
-    %   C_table - do indeksov m-l-1
+    % Input:
+    %   m - stopnja Bezierjeve krivulje
+    %   k - stopnja odvoda pri t = 0
+    %   l - stopnja odvoda pri t = 1
+    % Output:
+    %   C_table - do indeksov m-l-1; drugje je enaka 0
 
 
     C_table = zeros(m -l-1, m -l-1);
