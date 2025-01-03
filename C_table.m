@@ -7,10 +7,8 @@ function C_table = C_table(m, k, l)
     % Output:
     %   C_table - coefficients matrix
 
-    % Initialize C-table with zeros
     C_table = zeros(m +1, m + 1);
 
-    % Helper functions for A(u) and B(u)
     A = @(u) (u - m) * (u - k) * (u + k + 2) / (u + 1);
     B = @(u) u * (u - m - l - 2) * (u - m + l) / (u - m - 1);
 
